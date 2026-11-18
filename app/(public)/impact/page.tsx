@@ -111,7 +111,7 @@ export default function ImpactPage() {
   const [active, setActive] = useState<string>('all');
   const [updates, setUpdates] = useState<PublicUpdate[]>([]);
   const [loading, setLoading] = useState(true);
-  const [stats, setStats] = useState<{ publishedCauses: number; approvedUpdates: number; categories: number } | null>(null);
+  const [stats, setStats] = useState<{ publishedCauses: number; approvedUpdates: number; categories: number; verifiedOrgs: number } | null>(null);
 
   useEffect(() => {
     let cancelled = false;
