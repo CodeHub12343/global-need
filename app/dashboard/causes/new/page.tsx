@@ -343,8 +343,8 @@ export default function NewCausePage() {
                 </Fg>
                 <Field><Label>Detailed story *</Label><Textarea rows={5} value={form.story} onChange={(e) => patch('story', e.target.value)} /></Field>
                 <Fg>
-                  <Field><Label>Country *</Label><Input value={form.country} onChange={(e) => patch('country', e.target.value)} placeholder="Uganda" /></Field>
-                  <Field><Label>City or region *</Label><Input value={form.city} onChange={(e) => patch('city', e.target.value)} placeholder="Kampala" /></Field>
+                  <Field><Label>Country *</Label><Input value={form.country} onChange={(e) => patch('country', e.target.value)} placeholder="e.g. Kenya" /></Field>
+                  <Field><Label>City or region *</Label><Input value={form.city} onChange={(e) => patch('city', e.target.value)} placeholder="e.g. Nairobi" /></Field>
                 </Fg>
               </>
             )}

@@ -94,7 +94,7 @@ export default function AdminSettingsPage() {
           <Row><div><div className="l">Platform name</div><div className="h">Displayed in page titles and emails.</div></div><Field><Input value={get('general.platformName')} onChange={(e) => set('general.platformName', e.target.value)} /></Field></Row>
           <Row><div><div className="l">Support email</div></div><Field><Input value={get('general.supportEmail')} onChange={(e) => set('general.supportEmail', e.target.value)} /></Field></Row>
           <Row><div><div className="l">Primary language</div></div><Field><Select value={get('general.language')} onChange={(e) => set('general.language', e.target.value)}><option value="en-US">English (US)</option><option value="en-GB">English (UK)</option><option value="fr">FranÃ§ais</option></Select></Field></Row>
-          <Row><div><div className="l">Timezone</div></div><Field><Select value={get('general.timezone')} onChange={(e) => set('general.timezone', e.target.value)}><option value="UTC">UTC</option><option value="Africa/Kampala">Africa/Kampala</option><option value="America/New_York">America/New_York</option></Select></Field></Row>
+          <Row><div><div className="l">Timezone</div></div><Field><Select value={get('general.timezone')} onChange={(e) => set('general.timezone', e.target.value)}><option value="UTC">UTC</option><option value="Africa/Nairobi">Africa/Nairobi</option><option value="America/New_York">America/New_York</option></Select></Field></Row>
         </Card>
 
         <Card>

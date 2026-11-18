@@ -61,7 +61,7 @@ export default function RegisterPage() {
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
   const [orgName, setOrgName] = useState('');
-  const [country, setCountry] = useState('Uganda');
+  const [country, setCountry] = useState('');
   const [role, setRole] = useState('Executive / founder');
   const [pw, setPw] = useState('');
   const [consent, setConsent] = useState(true);
@@ -147,7 +147,20 @@ export default function RegisterPage() {
           <Field>
             <Label>Country</Label>
             <Select value={country} onChange={(e) => setCountry(e.target.value)}>
-              <option>Uganda</option><option>Kenya</option><option>United States</option><option>United Kingdom</option>
+              <option value="">Select a country</option>
+              <option>Kenya</option>
+              <option>Ghana</option>
+              <option>South Africa</option>
+              <option>Rwanda</option>
+              <option>Tanzania</option>
+              <option>Ethiopia</option>
+              <option>United States</option>
+              <option>United Kingdom</option>
+              <option>Canada</option>
+              <option>Germany</option>
+              <option>India</option>
+              <option>Philippines</option>
+              <option>Other</option>
             </Select>
           </Field>
           <Field>
