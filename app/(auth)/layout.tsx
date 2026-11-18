@@ -1,6 +1,6 @@
 'use client';
 
-import type { ReactNode } from 'react';
+import { Suspense, type ReactNode } from 'react';
 import Link from 'next/link';
 import styled from 'styled-components';
 import { Heart } from 'lucide-react';
@@ -62,7 +62,9 @@ export default function AuthLayout({ children }: { children: ReactNode }) {
           </span>
           <span>Meeting Global Needs</span>
         </Brand>
-        <Card>{children}</Card>
+        <Card>
+          <Suspense fallback={null}>{children}</Suspense>
+        </Card>
       </Inner>
     </Page>
   );
